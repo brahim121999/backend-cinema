@@ -1,2 +1,2 @@
 # backend-cinema
-Phase1 du projet
+Phase1 of the projet
