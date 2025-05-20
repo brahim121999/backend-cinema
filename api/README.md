@@ -90,19 +90,6 @@ print(response.json())
 response = httpx.get("http://localhost:8000/analytics")
 print(response.json())
 ```
-
----
-
-## Conditions of usage
-
-- This API is designed for educational and experimental purposes.
-
-- Please avoid making mass requests without frequency control (rate-limiting is not implemented yet).
-
-- You can integrate it into notebooks, applications, or data visualization projects to explore the MovieLens data.
-
----
-
 ---
 
 ## Ressources
