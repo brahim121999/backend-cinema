@@ -2,7 +2,7 @@
 
 This backend-cinema API and SDK will be used as the data source in a data analysis project available here: [https://github.com/brahim121999/analytics-cinema](https://github.com/brahim121999/analytics-cinema).
 
-**backend-cinema** is a RESTful API built with FastAPI that provides access to the MovieLens dataset, enabling rich queries and data exploration around movies, ratings, tags, users and external identifiers (IMDB, TMDB). Alongside the API, the **filmsdk-ibrahim** Python SDK offers an easy-to-use interface for data analysts and scientists to interact with the API using native Python objects, dictionaries or Pandas DataFrames.
+backend-cinema** is a RESTful API built with FastAPI that provides access to the MovieLens dataset, enabling rich queries and data exploration around movies, ratings, tags, users and external identifiers (IMDB, TMDB). Alongside the API, the **filmsdk-ibrahim** Python SDK offers an easy-to-use interface for data analysts and scientists to interact with the API using native Python objects, dictionaries or Pandas DataFrames.
 ---
 
 ## Features
