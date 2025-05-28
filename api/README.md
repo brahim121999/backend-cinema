@@ -102,7 +102,7 @@ print(response.json())
 
 ## Software Development Kit (SDK)
 
-*Soon*
+https://pypi.org/project/filmsdk-ibrahim/0.0.2/ 
 
 ---
 
