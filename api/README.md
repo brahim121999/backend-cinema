@@ -2,12 +2,6 @@
 
 Welcome to the **MovieLens API** – a RESTful API developed with **FastAPI** to explore the MovieLens database. It allows you to query information about movies, ratings, users, tags, and links to external databases (IMDB, TMDB).
 
-## 🌐 GitHub Repository
-
-You can explore the source code, contribute, or report issues on GitHub:
-
-👉 [https://github.com/bobo7121999/movielens-api](https://github.com/bobo7121999/movielens-api)
-
 ---
 
 ## 🚀 Main Features
