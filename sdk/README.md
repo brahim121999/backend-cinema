@@ -17,13 +17,6 @@ pip install filmsdk-ibrahim
 ```python
 from filmsdk-ibrahim import MovieClient, MovieConfig
 
-# Configuration with your API URL (Render)
-config = MovieConfig(movie_base_url="https://backend-cinema-96tw.onrender.com")
-client = MovieClient(config=config)
-```
-```python
-from filmsdk-ibrahim import MovieClient, MovieConfig
-
 # To test on docker
 config = MovieConfig(movie_base_url="http://localhost")
 client = MovieClient(config=config)
@@ -78,7 +71,7 @@ client.list_ratings(limit=10, output_format="pandas")
 You can also use a local API :
 
 ```python
-config = MovieConfig(movie_base_url="http://localhost:8000")
+config = MovieConfig(movie_base_url="http://localhost")
 client = MovieClient(config=config)
 ```
 
@@ -87,4 +80,4 @@ client = MovieClient(config=config)
 ## Liens utiles
 
 - API Render : [https://backend-cinema-96tw.onrender.com](https://backend-cinema-96tw.onrender.com)
-- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.1/](https://pypi.org/project/filmsdk-ibrahim/0.0.1/)
+- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.1/](https://pypi.org/project/filmsdk-ibrahim/0.0.2/)
