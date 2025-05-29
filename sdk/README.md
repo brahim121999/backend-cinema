@@ -1,4 +1,4 @@
-# MovieLens SDK - `filmsdk-ibrahim`
+# MovieLens SDK - `filmsdk_ibrahim`
 
 A simple Python SDK to interact with the MovieLens REST API. It is designed for Data Analysts and Data Scientists, with native support for Pydantic, dictionaries, and Pandas DataFrames.
 
@@ -7,18 +7,18 @@ A simple Python SDK to interact with the MovieLens REST API. It is designed for 
 ## Installation
 
 ```bash
-pip install filmsdk-ibrahim
+pip install filmsdk_ibrahim
 ```
 
 ---
 
-## Configuration
+## Configuration to test on local machine
 
 ```python
-from filmsdk-ibrahim import MovieClient, MovieConfig
+from filmsdk_ibrahim import MovieClient, MovieConfig
 
-# Configuration with your API URL (Render or local)
-config = MovieConfig(movie_base_url="https://backend-cinema-96tw.onrender.com")
+# Configuration with your API URL (local via docker)
+config = MovieConfig(movie_base_url="http://localhost:5050")
 client = MovieClient(config=config)
 ```
 
@@ -68,18 +68,6 @@ client.list_ratings(limit=10, output_format="pandas")
 
 ---
 
-## Test on local machine
-
-You can also use a local API :
-
-```python
-config = MovieConfig(movie_base_url="http://localhost:8000")
-client = MovieClient(config=config)
-```
-
----
-
 ## Liens utiles
 
-- API Render : [https://backend-cinema-96tw.onrender.com](https://backend-cinema-96tw.onrender.com)
-- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.1/](https://pypi.org/project/filmsdk-ibrahim/0.0.1/)
+- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.3/](https://pypi.org/project/filmsdk-ibrahim/0.0.3/)
