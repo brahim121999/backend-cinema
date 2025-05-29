@@ -94,7 +94,8 @@ print(response.json())
 
 ## Ressources
 
-- Swagger UI : [http://localhost:8000/docs](http://localhost:8000/docs)
+- Swagger UI : [http://localhost:8000/docs](http://localhost:8000/docs) , if launched on render
+or [http://localhost/docs](http://localhost/docs) , if launched on docker
 - Technical documentation: available via Swagger
 - Data set MovieLens : [https://grouplens.org/datasets/movielens/](https://grouplens.org/datasets/movielens/)
 
