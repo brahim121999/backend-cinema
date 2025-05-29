@@ -80,4 +80,4 @@ client = MovieClient(config=config)
 ## Liens utiles
 
 - API Render : [https://backend-cinema-96tw.onrender.com](https://backend-cinema-96tw.onrender.com)
-- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.1/](https://pypi.org/project/filmsdk-ibrahim/0.0.2/)
+- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.2/](https://pypi.org/project/filmsdk-ibrahim/0.0.2/)
