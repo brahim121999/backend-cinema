@@ -4,10 +4,14 @@ A simple Python SDK to interact with the MovieLens REST API. It is designed for 
 
 ---
 
+## ⚙️ Prerequisites (for local development)
+
+- Python ≥ 3.12
+---
 ## Installation
 
 ```bash
-pip install filmsdk-ibrahim
+pip install filmsdk_ibrahim
 ```
 
 ---
@@ -15,22 +19,20 @@ pip install filmsdk-ibrahim
 ## Configuration
 
 ```python
-from filmsdk-ibrahim import MovieClient, MovieConfig
+from filmsdk_ibrahim import MovieClient, MovieConfig
 
-# Configuration with your API URL (Render or local)
-config = MovieConfig(movie_base_url="https://backend-cinema-96tw.onrender.com")
+# To test on docker
+config = MovieConfig(movie_base_url="http://localhost:5050")
 client = MovieClient(config=config)
 ```
-
 ---
-
 ## Test SDK
 
 ### 1. Health check
 
 ```python
 client.health_check()
-# Retourn : {"status": "ok"}
+# Return : {"status": "ok"}
 ```
 
 ### 2. Get a film
@@ -68,18 +70,7 @@ client.list_ratings(limit=10, output_format="pandas")
 
 ---
 
-## Test on local machine
-
-You can also use a local API :
-
-```python
-config = MovieConfig(movie_base_url="http://localhost:8000")
-client = MovieClient(config=config)
-```
-
----
-
 ## Liens utiles
 
 - API Render : [https://backend-cinema-96tw.onrender.com](https://backend-cinema-96tw.onrender.com)
-- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.1/](https://pypi.org/project/filmsdk-ibrahim/0.0.1/)
+- PyPI : [https://pypi.org/project/filmsdk-ibrahim/0.0.2/](https://pypi.org/project/filmsdk-ibrahim/0.0.2/)
