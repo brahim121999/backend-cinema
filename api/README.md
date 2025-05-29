@@ -32,7 +32,7 @@ docker pull bobo7121999/img_api_film:latest
 ```
 2. Run the container
 ```
-docker run -d -p 80:80 --name container_api_film bobo7121999/img_api_film:latest
+docker run -d -p 5050:80 --name container_api_film bobo7121999/img_api_film:latest
 ```
 3. Access the API
 ```
