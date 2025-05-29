@@ -37,9 +37,9 @@ docker run -d -p 5050:80 --name container_api_film bobo7121999/img_api_film:late
 ```
 3. Access the API
 ```
-Swagger UI: http://localhost/docs
+Swagger UI: http://localhost:5050/docs
 
-Health check: http://localhost/
+Health check: http://localhost:5050/
 ```
 ---
 
@@ -68,23 +68,23 @@ Health check: http://localhost/
 import httpx
 
 # List of movies
-response = httpx.get("http://localhost/movies", params={"limit": 5})
+response = httpx.get("http://localhost:5050/movies", params={"limit": 5})
 print(response.json())
 
 # Specific movie
-response = httpx.get("http://localhost/movies/1")
+response = httpx.get("http://localhost:5050/movies/1")
 print(response.json())
 
 # Ratings
-response = httpx.get("http://localhost/ratings", params={"movie_id": 1})
+response = httpx.get("http://localhost:5050/ratings", params={"movie_id": 1})
 print(response.json())
 
 # Tag
-response = httpx.get("http://localhost/tags/5/1/superbe")
+response = httpx.get("http://localhost:5050/tags/5/1/superbe")
 print(response.json())
 
 # Global stats
-response = httpx.get("http://localhost/analytics")
+response = httpx.get("http://localhost:5050/analytics")
 print(response.json())
 
 ```
@@ -92,7 +92,7 @@ print(response.json())
 
 ## 📚 Resources
 
-- **Swagger UI (Docs):** [http://localhost/docs](http://localhost/docs)
+- **Swagger UI (Docs):** [http://localhost:5050/docs](http://localhost/docs)
 - **Dataset:** [MovieLens](https://grouplens.org/datasets/movielens/)
 
 ---
