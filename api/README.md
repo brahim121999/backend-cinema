@@ -92,7 +92,6 @@ print(response.json())
 
 - **Swagger UI (Docs):** [http://localhost/docs](http://localhost/docs)
 - **Dataset:** [MovieLens](https://grouplens.org/datasets/movielens/)
-- **SDK (PyPI):** [filmsdk-ibrahim](https://pypi.org/project/filmsdk-ibrahim/)
 
 ---
 
