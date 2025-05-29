@@ -1,103 +1,104 @@
-# MovieLens API
+# 🎬 MovieLens API
 
-Welcome to the **MovieLens API** - a RESTful API developed with **FastAPI** to explore the MovieLens database. It allows you to query information about movies, ratings, users, tags, and links to external databases (IMDB, TMDB).
+Welcome to the **MovieLens API** – a RESTful API developed with **FastAPI** to explore the MovieLens database. It allows you to query information about movies, ratings, users, tags, and links to external databases (IMDB, TMDB).
 
-## Main Features
+## 🌐 GitHub Repository
 
-- Search for movies by title, genre, or ID
-- View ratings by user and by movie
-- Manage tags associated with movies
-- Retrieve IMDB/TMDB IDs
-- Global database statistics
+You can explore the source code, contribute, or report issues on GitHub:
+
+👉 [https://github.com/bobo7121999/movielens-api](https://github.com/bobo7121999/movielens-api)
 
 ---
 
-## Prerequisites
+## 🚀 Main Features
+
+- 🔍 Search for movies by title, genre, or ID  
+- ⭐ View ratings by user and by movie  
+- 🏷️ Manage tags associated with movies  
+- 🔗 Retrieve IMDB/TMDB IDs  
+- 📊 Global database statistics  
+
+---
+
+## ⚙️ Prerequisites (for local development)
 
 - Python ≥ 3.12
 - An HTTP client like `httpx` or `requests`
 
-Quick installation of `httpx`:
-
+Install `httpx`:
 ```bash
 pip install httpx
+
+
+## 🐳 Run with Docker (Recommended for Quick Testing)
+
+1. Pull the Docker image
+```
+docker pull bobo7121999/img_api_film:latest
+```
+2. Run the container
+```
+docker run -d -p 80:80 --name container_api_film bobo7121999/img_api_film:latest
+```
+3. Access the API
+```
+Swagger UI: http://localhost/docs
+
+Health check: http://localhost/
 ```
 
-## Getting Started with the API
+## 📫 Essential Endpoints
 
-The API is accessible at the following address:
-
-The Swagger interface is available here:
-```
-http://localhost:8000/docs
-```
-
-## Essential Endpoints
-
-| Method | URL                                 | Description |
-|--------|--------------------------------------|-------------|
-| GET    | `/`                                  | Checks API functionality |
-| GET    | `/movies`                            | Paginated list of movies with filters |
-| GET    | `/movies/{movie_id}`                 | Movie details |
-| GET    | `/ratings`                           | Paginated list of ratings |
-| GET    | `/ratings/{user_id}/{movie_id}`      | A user's rating for a movie |
-| GET    | `/tags`                              | List of tags |
-| GET    | `/tags/{user_id}/{movie_id}/{tag}`   | Tag details |
-| GET    | `/links`                             | List of IMDB/TMDB identifiers |
-| GET    | `/links/{movie_id}`                  | Identifiers for a given movie |
-| GET    | `/analytics`                         | Database statistics |
+| Method | URL                                    | Description                           |
+|--------|----------------------------------------|------------------------------------   |
+| GET    | `/`                                    | Check API status                      |
+| GET    | `/movies`                              | Paginated list of movies with filters |
+| GET    | `/movies/{movie_id}`                   | Movie details                         |
+| GET    | `/ratings`                             | Paginated list of ratings             |
+| GET    | `/ratings/{user_id}/{movie_id}`        | A user's rating for a movie           |
+| GET    | `/tags`                                | List of tags                          |
+| GET    | `/tags/{user_id}/{movie_id}/{tag}`     | Tag details                           |
+| GET    | `/links`                               | List of IMDB/TMDB identifiers         |
+| GET    | `/links/{movie_id}`                    | Identifiers for a given movie         |
+| GET    | `/analytics`                           | Database statistics                   |
 
 
 
 ---
 
-## Example of usage with `httpx`
-
-### List of films
+## 🧪 Example Usage with httpx
 
 ```python
 import httpx
 
-response = httpx.get("http://localhost:8000/movies", params={"limit": 5})
+# List of movies
+response = httpx.get("http://localhost/movies", params={"limit": 5})
 print(response.json())
-```
 
-### Get a specific film
-
-```python
-movie_id = 1
-response = httpx.get(f"http://localhost:8000/movies/{movie_id}")
+# Specific movie
+response = httpx.get("http://localhost/movies/1")
 print(response.json())
-```
 
-### Get ratings for a specific film
-
-```python
-response = httpx.get("http://localhost:8000/ratings", params={"movie_id": 1})
+# Ratings
+response = httpx.get("http://localhost/ratings", params={"movie_id": 1})
 print(response.json())
-```
 
-### Get a specific tag
-
-```python
-response = httpx.get("http://localhost:8000/tags/5/1/superbe")
+# Tag
+response = httpx.get("http://localhost/tags/5/1/superbe")
 print(response.json())
-```
 
-### Get global statistics
-
-```python
-response = httpx.get("http://localhost:8000/analytics")
+# Global stats
+response = httpx.get("http://localhost/analytics")
 print(response.json())
+
 ```
 ---
 
-## Ressources
+## 📚 Resources
 
-- Swagger UI : [http://localhost:8000/docs](http://localhost:8000/docs) , if launched on render
-or [http://localhost/docs](http://localhost/docs) , if launched on docker
-- Technical documentation: available via Swagger
-- Data set MovieLens : [https://grouplens.org/datasets/movielens/](https://grouplens.org/datasets/movielens/)
+- **Swagger UI (Docs):** [http://localhost/docs](http://localhost/docs)
+- **Dataset:** [MovieLens](https://grouplens.org/datasets/movielens/)
+- **SDK (PyPI):** [filmsdk-ibrahim](https://pypi.org/project/filmsdk-ibrahim/)
 
 ---
 
@@ -111,8 +112,8 @@ https://pypi.org/project/filmsdk-ibrahim/0.0.2/
 
 *Soon*
 
-## Author
+## ✍️ Author
 
-Ibrahim Braham
+**Ibrahim Braham**
 
 ---
