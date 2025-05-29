@@ -11,7 +11,7 @@ A simple Python SDK to interact with the MovieLens REST API. It is designed for 
 ## Installation
 
 ```bash
-pip install filmsdk-ibrahim
+pip install filmsdk_ibrahim
 ```
 
 ---
