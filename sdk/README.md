@@ -20,6 +20,12 @@ from filmsdk-ibrahim import MovieClient, MovieConfig
 # Configuration with your API URL (Render or local)
 config = MovieConfig(movie_base_url="https://backend-cinema-96tw.onrender.com")
 client = MovieClient(config=config)
+
+```
+# To test on docker
+config = MovieConfig(movie_base_url="http://localhost")
+
+client = MovieClient(config=config)
 ```
 
 ---
