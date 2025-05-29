@@ -22,7 +22,7 @@ Welcome to the **MovieLens API** – a RESTful API developed with **FastAPI** to
 Install `httpx`:
 ```bash
 pip install httpx
-
+```
 
 ## 🐳 Run with Docker (Recommended for Quick Testing)
 
