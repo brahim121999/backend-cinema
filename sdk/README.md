@@ -21,7 +21,7 @@ from filmsdk-ibrahim import MovieClient, MovieConfig
 config = MovieConfig(movie_base_url="http://localhost:5050")
 client = MovieClient(config=config)
 ```
-
+---
 ## Test SDK
 
 ### 1. Health check
