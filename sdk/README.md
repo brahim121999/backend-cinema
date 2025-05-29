@@ -19,7 +19,7 @@ pip install filmsdk-ibrahim
 ## Configuration
 
 ```python
-from filmsdk-ibrahim import MovieClient, MovieConfig
+from filmsdk_ibrahim import MovieClient, MovieConfig
 
 # To test on docker
 config = MovieConfig(movie_base_url="http://localhost:5050")
