@@ -4,6 +4,10 @@ A simple Python SDK to interact with the MovieLens REST API. It is designed for 
 
 ---
 
+## ⚙️ Prerequisites (for local development)
+
+- Python ≥ 3.12
+---
 ## Installation
 
 ```bash
