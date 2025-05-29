@@ -28,7 +28,7 @@ client = MovieClient(config=config)
 
 ```python
 client.health_check()
-# Retourn : {"status": "ok"}
+# Return : {"status": "ok"}
 ```
 
 ### 2. Get a film
