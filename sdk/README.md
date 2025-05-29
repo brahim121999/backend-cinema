@@ -18,7 +18,7 @@ pip install filmsdk-ibrahim
 from filmsdk-ibrahim import MovieClient, MovieConfig
 
 # To test on docker
-config = MovieConfig(movie_base_url="http://localhost")
+config = MovieConfig(movie_base_url="http://localhost:5050")
 client = MovieClient(config=config)
 ```
 
@@ -62,17 +62,6 @@ Example :
 ```python
 client.list_movies(limit=10, output_format="dict")
 client.list_ratings(limit=10, output_format="pandas")
-```
-
----
-
-## Test on local machine
-
-You can also use a local API :
-
-```python
-config = MovieConfig(movie_base_url="http://localhost")
-client = MovieClient(config=config)
 ```
 
 ---
