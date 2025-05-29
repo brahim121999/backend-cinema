@@ -23,6 +23,7 @@ Install `httpx`:
 ```bash
 pip install httpx
 ```
+---
 
 ## 🐳 Run with Docker (Recommended for Quick Testing)
 
@@ -40,6 +41,7 @@ Swagger UI: http://localhost/docs
 
 Health check: http://localhost/
 ```
+---
 
 ## 📫 Essential Endpoints
 
@@ -104,7 +106,7 @@ https://pypi.org/project/filmsdk-ibrahim/0.0.2/
 ## Public URL
 
 *Soon*
-
+---
 ## ✍️ Author
 
 **Ibrahim Braham**
