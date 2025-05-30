@@ -2,9 +2,9 @@
 
 ## Overview
 
-**backend-cinema** is a RESTful API built with FastAPI that provides structured access to the [MovieLens dataset](https://grouplens.org/datasets/movielens/), a widely used benchmark dataset published by [GroupLens](https://grouplens.org/). This project enables rich queries and data exploration around movies, ratings, tags, users, and external identifiers (IMDB, TMDB).
+**backend-cinema** is a RESTful API built with FastAPI that provides structured access to the [MovieLens dataset](https://grouplens.org/datasets/movielens/), a widely used benchmark dataset published by [GroupLens](https://grouplens.org/). This project enables rich queries and data exploration around movies, ratings, tags, users and external identifiers (IMDB, TMDB).
 
-Alongside the API, the **filmsdk-ibrahim** Python SDK offers an intuitive interface for data analysts and scientists to interact with the API using native Python objects, dictionaries, or Pandas DataFrames.
+In addition to the API, the project includes a Python package — **[filmsdk_ibrahim](https://pypi.org/project/filmsdk-ibrahim/0.0.4/)** — available on PyPI. This SDK makes it easy for data analysts and scientists to interact with the MovieLens API directly from Python, supporting various data formats such as dictionaries and Pandas DataFrames.
 
 ---
 
@@ -21,16 +21,16 @@ Alongside the API, the **filmsdk-ibrahim** Python SDK offers an intuitive interf
 
 ---
 
-### filmsdk-ibrahim SDK
+### filmsdk_ibrahim Python Package
 
-- Python client to interact with the MovieLens API seamlessly  
-- Supports multiple output formats: Pydantic models, dictionaries, and Pandas DataFrames  
+- Python SDK for accessing the MovieLens REST API  
+- Available on PyPI: [filmsdk-ibrahim](https://pypi.org/project/filmsdk-ibrahim/)  
+- Supports multiple output formats: Pydantic models, dictionaries, Pandas DataFrames  
 - Designed for data analysis and scientific workflows  
-- Simple configuration for local or remote API endpoints  
+- Easily configurable for local or remote API endpoints  
 
 ---
 
 ## Dataset Source
 
 The dataset used in this project is the [MovieLens dataset](https://grouplens.org/datasets/movielens/) made available by [GroupLens](https://grouplens.org/). It provides real-world movie rating data commonly used in recommendation system research and development.
----
